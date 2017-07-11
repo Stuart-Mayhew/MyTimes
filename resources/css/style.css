@@ -23,10 +23,10 @@ header {
   height: 100%;
   flex-wrap: nowrap;
 }
-p a {
+header p a {
   color: mediumaquamarine;
 }
-ul {
+header ul {
   display: -webkit-flex;
   display: flex;
   list-style: none;
@@ -35,13 +35,42 @@ ul {
   height: 100%;
   flex-wrap: wrap;
 }
-li {
+header li {
   display: inline;
   text-decoration: underline;
   margin: 0 10px;
 
 }
-a {
+header a {
   text-decoration: none;
   color: black;
+}
+
+.container {
+  display: flex;
+}
+.main {
+  display: flex;
+  width: 630px;
+  flex-direction: column;
+}
+.headline {
+  flex-direction: column;
+
+}
+.sub-headlines {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+.small-column {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+.sub-column {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
 }
