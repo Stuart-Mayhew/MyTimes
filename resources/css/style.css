@@ -1,7 +1,7 @@
 body {
   margin: 0;
-
 }
+
 header {
   display: flex;
   width: 100%;
@@ -77,6 +77,8 @@ header a {
   width: 630px;
   flex-direction: column;
 }
+
+
 .headline-story {
   flex-direction: column;
 }
@@ -90,6 +92,11 @@ header a {
 .headline-story .headline {
   font-size: 40px;
   padding: 0 25px;
+}
+@media only screen and (max-width:630px) {
+  .headline-story .headline {
+    font-size: 32px;
+  }
 }
 .sub-headlines {
   flex-direction: row;
@@ -125,9 +132,7 @@ header a {
   width: 299px;
   height: 300px;
 }
-.news-bites {
 
-}
 .news-bites h1 {
   font-size: 16px;
   font-weight: bold;
@@ -204,3 +209,49 @@ footer a {
   font-family: verdana;
   padding: 0;
 }
+@media only screen and (max-width:1260px) {
+  .news-bites {
+    display: none;
+  }
+  .jumbotron {
+  width: 980px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .jumbotron {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:630px) {
+  .main {
+    width: 100%;
+  }
+  .headline-story .img {
+    width: 100%;
+  }
+  .small-column {
+    width: 47.5%;
+  }
+  #cameras, #earth {
+    width: 100%;
+  }
+  .sub-column {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #cats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width:480px) {
+  .sub-headlines {
+    flex-direction: column;
+  }
+  .small-column {
+    width: 100%;
+    flex-direction: column;
+  }
